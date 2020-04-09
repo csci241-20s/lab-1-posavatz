@@ -288,3 +288,878 @@ posavan@cf164-16:~/csci241/lab-1-posavatz$ exit
 exit
 
 Script done on 2020-04-09 14:43:54-0700
+Script started on 2020-04-09 14:50:35-0700
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git checkout
+Your branch is up to date with 'origin/master'.
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git rest[Ket
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gradle/[m
+	[31mbuild/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git mv[K[K[K[K[K[Knano test.txt
+[?1049h[22;0;0t[1;50r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[48;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                                           test.txt                                                     [1;119H(B[m[49d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[50d(B[0;7m^X(B[m Exit[50;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[48d[3d[39;49m(B[m[?12l[?25h[?25l[1;119H[48;52H(B[0;7m[ Wrote 0 lines ](B[m[3d[?12l[?25h[?25l[48d[J[50;120H[?12l[?25h[50;1H[?1049l[23;0;0t[?1l>posavan@cf164-16:~/csci241/lab-1-posavatz$ ls
+build  build.gradle  gradle  settings.gradle  src  test.txt  typescript  username.txt  writeup.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git rm test.txt 
+fatal: pathspec 'test.txt' did not match any files
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git add text[K[Kst.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git commit '[K-m "Added test fui[K[Kile for testing purposes"
+[master c2f8068] Added test file for testing purposes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ pit push[K[K[K[K[K[K[K[Kgit push
+Username for 'https://github.com': posavatz
+Password for 'https://posavatz@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)   Writing objects: 100% (2/2)   Writing objects: 100% (2/2), 272 bytes | 272.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/csci241-20s/lab-1-posavatz.git
+   dfcbfed..c2f8068  master -> master
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git zt[K[K[K[K[K[Kls
+build  build.gradle  gradle  settings.gradle  src  test.txt  typescript  username.txt  writeup.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git rm test.txt
+rm 'test.txt'
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git tsatus[K[K[K[K[K[Kstatus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mdeleted:    test.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gradle/[m
+	[31mbuild/[m
+
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git check ot[K[K[Kout
+D	test.txt
+Your branch is up to date with 'origin/master'.
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git tstau[K[K[K[K[Kstatus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mdeleted:    test.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gradle/[m
+	[31mbuild/[m
+
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git reset
+Unstaged changes after reset:
+D	test.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git push
+Username for 'https://github.com': posavatz
+Password for 'https://posavatz@github.com': 
+Everything up-to-date
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git tsatus[K[K[K[K[K[Kstatus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    test.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gradle/[m
+	[31mbuild/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git log
+[?1h=[33mcommit c2f8068bec6b4303ce1218eedb0d01bf20ae2e3c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Nikolai <posavan@wwu.edu>[m
+Date:   Thu Apr 9 14:53:17 2020 -0700[m
+[m
+    Added test file for testing purposes[m
+[m
+[33mcommit dfcbfed9f206a94ed304b4e68e3ccaaa56897935[m[m
+Author: Nikolai <posavan@wwu.edu>[m
+Date:   Thu Apr 9 14:47:36 2020 -0700[m
+[m
+    Added typescript file[m
+[m
+[33mcommit 5df9aef650e75dc687ce910c11a077afd3ceedd3[m[m
+Author: Nikolai <posavan@wwu.edu>[m
+Date:   Thu Apr 9 14:43:38 2020 -0700[m
+[m
+    Hello now prints command line arg[m
+[m
+[33mcommit 3bfb02f4a68a738e75ce876eef6ef6d804b92fc6[m[m
+Author: Nikolai <posavan@wwu.edu>[m
+Date:   Thu Apr 9 14:25:49 2020 -0700[m
+[m
+    Added part 3 (fav song)[m
+[m
+[33mcommit cdbf23103ad13e4f24c98a33215873d7dac6860e[m[m
+Author: Nikolai <posavan@wwu.edu>[m
+Date:   Thu Apr 9 14:20:26 2020 -0700[m
+[m
+    Added username file with name and usernames[m
+[m
+[33mcommit f8c6708af7a3c0f1ca9445c516a92947d7a517e0[m[m
+Author: Nikolai <posavan@wwu.edu>[m
+Date:   Thu Apr 9 14:18:18 2020 -0700[m
+[m
+    Added part 2 (hobby) to writeup[m
+[m
+[33mcommit fa1856c9e204e5f911019e77f1c58faadc3b892a[m[m
+Author: Nikolai <posavan@wwu.edu>[m
+Date:   Thu Apr 9 14:16:55 2020 -0700[m
+[m
+    Added part 1 (names) to writeup[m
+[m
+[33mcommit 7d1cda8285099b4197d002b0669cca88a52bfd7d[m[m
+Author: Nikolai <posavan@wwu.edu>[m
+Date:   Thu Apr 9 12:29:50 2020 -0700[m
+[m
+    Added empty writeup[m
+[m
+[33mcommit 17dfb5fcbfa6f6e62ba8f9b436e0f60e50275b57[m[m
+:[K[K[K:[K[K:[K[K[7mNo next tag  (press RETURN)[27m[50;1H[K[K:[K[K[K:[K[K:[K[K:[K[Kmark: [K:[K[K [KESCESC[KOO[KBB[KAuthor: swehrwein <swehrwein@gmail.com>[m
+:[K[K [KESCESC[KOO[KBB[KDate:   Thu Apr 9 11:53:26 2020 -0700[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K    Setting up GitHub Classroom Feedback[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K[33mcommit a9bf1f41b1b2ee327973b614d70d1347e27da50d[m[33m ([m[1;31morigin/feedback[m[33m)[m[m
+:[K[K [KESCESC[KOO[KBB[KAuthor: swehrwein <swehrwein@gmail.com>[m
+:[K[K [KESCESC[KOO[KBB[KDate:   Thu Apr 9 11:53:26 2020 -0700[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K    Setting up GitHub Classroom Feedback[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K[33mcommit c6c8aeadcf5a65071c917835df4844d5a484a072[m[m
+:[K[K [KESCESC[KOO[KBB[KAuthor: swehrwein <swehrwein@gmail.com>[m
+:[K[K [KESCESC[KOO[KBB[KDate:   Thu Apr 9 11:53:24 2020 -0700[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K    Initial commit[m
+:[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>posavan@cf164-16:~/csci241/lab-1-posavatz$ git diff
+[?1h=[1mdiff --git a/test.txt b/test.txt[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex e69de29..0000000[m[m
+[1mdiff --git a/typescript b/typescript[m[m
+[1mindex a9add07..c1c08b3 100644[m[m
+[1m--- a/typescript[m[m
+[1m+++ b/typescript[m[m
+[36m@@ -288,3 +288,167 @@[m [mposavan@cf164-16:~/csci241/lab-1-posavatz$ exit[m[m
+ exit[m[m
+ [m[m
+ Script done on 2020-04-09 14:43:54-0700[m[m
+[32m+[m[32mScript started on 2020-04-09 14:50:35-0700[m[m
+[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git checkout[m[41m[7m^M[27m[m[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m[41m[7m^M[27m[m[m
+[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git reset[m[41m[7m^M[27m[m[m
+[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git status[m[41m[7m^M[27m[m[m
+[32m+[m[32mOn branch master[m[41m[7m^M[27m[m[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m[41m[7m^M[27m[m[m
+[32m+[m[41m[7m^M[27m[m[m
+[32m+[m[32mUntracked files:[m[41m[7m^M[27m[m[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m[41m[7m^M[27m[m[m
+[32m+[m[41m[7m^M[27m[m[m
+[32m+[m       [32m[31m.gradle/[m[m[41m[7m^M[27m[m[m
+[32m+[m       [32m[31mbuild/[m[m[41m[7m^M[27m[m[m
+[32m+[m[41m[7m^M[27m[m[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m[41m[7m^M[27m[m[m
+[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ [7m^G[27mnano test.txt[m[41m[7m^M[27m[m[m
+[32m+[m[32m[m[39;49m[39;49m[m[0;7m[ New File ][m[0;7m  GNU nano 2.9.3                                           test.txt                                        [m [32m[m[32m[m[39;49m[39;49m[m[0;7m[m[0;7m             [m[7m^M[27m[0;7m^G[m Get Help    [0;7m^O[m Write Out   [0;7m^W[m Where Is    [0;7m^K[m Cut Text    [0;7m^J[m Justify     [0;7m^C[m Cur Pos     [0;7mM-U[m Undo[0;7mM-A[m Mar[m [32m[m[32m[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[mk Text[7m^M[27m[0;7m^X[m Exit[0;7m^R[m Read File   [0;7m^\[m Replace     [0;7m^U[m Uncut Text  [0;7m^T[m To Spell    [0;7m^_[m Go To Line  [0;7mM-E[m Redo[0;7mM-6[m Copy Text[7m^M[27m[39;49m[m[0;7m[ Wrote[m [32m[m[32m[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[39;49m[m[0;7m 0 lines ][m[7m^M^M[27mposavan@cf164-16:~/csci241/lab-1-posavatz$ ls[m[41m[7m^M[27m[m[m
+[32m+[m[32mbuild  build.gradle  gradle  settings.gradle  src  test.txt  typescript  username.txt  writeup.txt[m[41m[7m^M[27m[m[m
+[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git rm test.txt[m[41m [7m^M[27m[m[m
+[32m+[m[32mfatal: pathspec 'test.txt' did not match any files[m[41m[7m^M[27m[m[m
+[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git add test.txt[m[41m[7m^M[27m[m[m
+[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git commit -m "Added test file for testing purposes"[m[41m[7m^M[27m[m[m
+[32m+[m[32m[master c2f8068] Added test file for testing purposes[m[41m[7m^M[27m[m[m
+[32m+[m[32m 1 file changed, 0 insertions(+), 0 deletions(-)[m[41m[7m^M[27m[m[m
+[32m+[m[32m create mode 100644 test.txt[m[41m[7m^M[27m[m[m
+[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ [7m^G^G^G^G^G^G^G^G^G^G^G^G[27mgit push[m[41m[7m^M[27m[m[m
+[32m+[m[32mUsername for 'https://github.com': posavatz[m[41m[7m^M[27m[m[m
+[32m+[m[32mPassword for 'https://posavatz@github.com':[m[41m [7m^M[27m[m[m
+[32m+[m[32mCounting objects: 2, done.[m[41m[7m^M[27m[m[m
+[32m+[m[32mDelta compression using up to 8 threads.[m[41m[7m^M[27m[m[m
+[32m+[m[32mCompressing objects:  50% (1/2)   [7m^M[27mCompressing objects: 100% (2/2)   [7m^M[27mCompressing objects: 100% (2/2), done.[m[41m[7m^M[27m[m[m
+[32m+[m[32mWriting objects:  50% (1/2)   [7m^M[27mWriting objects: 100% (2/2)   [7m^M[27mWriting objects: 100% (2/2), 272 bytes | 272.00 KiB/s, [m [32m[m[32mdone.[m[41m[7m^M[27m[m[m
+[32m+[m[32mTotal 2 (delta 1), reused 0 (delta 0)[m[41m[7m^M[27m[m[m
+[32m+[m[32mremote: Resolving deltas:   0% (0/1)[7m^M[27mremote: Resolving deltas: 100% (1/1)[7m^M[27mremote: Resolving deltas: 100% (1/1), compl[m :[K[K [KESCESC[KOO[KBB[K[32m[m[32meted with 1 local object.[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mTo https://github.com/csci241-20s/lab-1-posavatz.git[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m   dfcbfed..c2f8068  master -> master[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ [7m^G[27mls[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mbuild  build.gradle  gradle  settings.gradle  src  test.txt  typescript  username.txt  writeup.txt[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git rm test.txt[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mrm 'test.txt'[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git status[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mOn branch master[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mYour branch is up to date with 'origin/master'.[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mChanges to be committed:[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  (use "git reset HEAD <file>..." to unstage)[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32m[32mdeleted:    test.txt[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mUntracked files:[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32m[31m.gradle/[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32m[31mbuild/[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git checkout[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mD      test.txt[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mYour branch is up to date with 'origin/master'.[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git status[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mOn branch master[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mYour branch is up to date with 'origin/master'.[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mChanges to be committed:[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  (use "git reset HEAD <file>..." to unstage)[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32m[32mdeleted:    test.txt[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mUntracked files:[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32m[31m.gradle/[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32m[31mbuild/[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git reset[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mUnstaged changes after reset:[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mD      test.txt[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git push[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mUsername for 'https://github.com': posavatz[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mPassword for 'https://posavatz@github.com':[m[41m [7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mEverything up-to-date[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git status[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mOn branch master[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mYour branch is up to date with 'origin/master'.[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mChanges not staged for commit:[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  (use "git add/rm <file>..." to update what will be committed)[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  (use "git checkout -- <file>..." to discard changes in working directory)[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32m[31mdeleted:    test.txt[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mUntracked files:[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32m[31m.gradle/[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32m[31mbuild/[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mno changes added to commit (use "git add" and/or "git commit -a")[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mposavan@cf164-16:~/csci241/lab-1-posavatz$ git log[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[7m^M[27m[33mcommit c2f8068bec6b4303ce1218eedb0d01bf20ae2e3c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mAuthor: Nikolai <posavan@wwu.edu>[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mDate:   Thu Apr 9 14:53:17 2020 -0700[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    Added test file for testing purposes[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[33mcommit dfcbfed9f206a94ed304b4e68e3ccaaa56897935[m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mAuthor: Nikolai <posavan@wwu.edu>[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mDate:   Thu Apr 9 14:47:36 2020 -0700[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    Added typescript file[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[33mcommit 5df9aef650e75dc687ce910c11a077afd3ceedd3[m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mAuthor: Nikolai <posavan@wwu.edu>[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mDate:   Thu Apr 9 14:43:38 2020 -0700[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    Hello now prints command line arg[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[33mcommit 3bfb02f4a68a738e75ce876eef6ef6d804b92fc6[m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mAuthor: Nikolai <posavan@wwu.edu>[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mDate:   Thu Apr 9 14:25:49 2020 -0700[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    Added part 3 (fav song)[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[33mcommit cdbf23103ad13e4f24c98a33215873d7dac6860e[m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mAuthor: Nikolai <posavan@wwu.edu>[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mDate:   Thu Apr 9 14:20:26 2020 -0700[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    Added username file with name and usernames[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[33mcommit f8c6708af7a3c0f1ca9445c516a92947d7a517e0[m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mAuthor: Nikolai <posavan@wwu.edu>[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mDate:   Thu Apr 9 14:18:18 2020 -0700[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    Added part 2 (hobby) to writeup[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[33mcommit fa1856c9e204e5f911019e77f1c58faadc3b892a[m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mAuthor: Nikolai <posavan@wwu.edu>[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mDate:   Thu Apr 9 14:16:55 2020 -0700[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    Added part 1 (names) to writeup[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[33mcommit 7d1cda8285099b4197d002b0669cca88a52bfd7d[m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mAuthor: Nikolai <posavan@wwu.edu>[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mDate:   Thu Apr 9 12:29:50 2020 -0700[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    Added empty writeup[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m[33mcommit 17dfb5fcbfa6f6e62ba8f9b436e0f60e50275b57[m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M^G^M[27m:[7m^G^M[27m:[7m^M[27m[7mNo next tag  (press RETURN)[27m[7m^M[27m:[7m^M^G^M[27m:[7m^G^M[27m:[7m^G^M[27m:[7m^M[27mmark: [7m^M[27m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27mAuthor: swehrwein <swehrwein@gmail.c[m :[K[K [KESCESC[KOO[KBB[K[32m[m[32m[7m[27mom>[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27mDate:   Thu Apr 9 11:53:26 2020 -0700[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27m    Setting up GitHub Classroom Feedback[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27m[33mcommit a9bf1f41b1b2ee327973b614d70d1347e27da50d[m[33m ([m[1;31morigin/feedback[m[33m)[m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27mAuthor: swehrwein <swehrwein@gmail.com>[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27mDate:   Thu Apr 9 11:53:26 2020 -0700[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27m    Setting up GitHub Classroom Feedback[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27m[33mcommit c6c8aeadcf5a65071c917835df4844d5a484a072[m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27mAuthor: swehrwein <swehrwein@gmail.com>[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27mDate:   Thu Apr 9 11:53:24 2020 -0700[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27m[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M[27m    Initial commit[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m:[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M^G^M[27m[7m(END)[27m[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M^G^M[27m[7m(END)[27m[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M^G^M[27m[7m(END)[27m[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M^G^M[27m[7m(END)[27m[7m^M[27m [1mE[0mSC[1mOB[0m[7m^M^G^M[27m[7m(END)[m[m
+:[K[K [KESCESC[KOO[KBB[K\ No newline at end of file[m[m
+:[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>posavan@cf164-16:~/csci241/lab-1-posavatz$ ls
+build  build.gradle  gradle  settings.gradle  src  typescript  username.txt  writeup.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git pull
+Already up to date.
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    test.txt[m
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gradle/[m
+	[31mbuild/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git checkout
+D	test.txt
+M	typescript
+Your branch is up to date with 'origin/master'.
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git add test.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git commit "[K-m "check if removed:[K"
+[master 85cd901] check if removed
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 test.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git push
+Username for 'https://github.com': posavatz
+Password for 'https://posavatz@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)   Writing objects: 100% (2/2)   Writing objects: 100% (2/2), 221 bytes | 221.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+gt    To https://github.com/csci241-20s/lab-1-posavatz.git
+   c2f8068..85cd901  master -> master
+posavan@cf164-16:~/csci241/lab-1-posavatz$ ;[Kls
+build  build.gradle  gradle  settings.gradle  src  typescript  username.txt  writeup.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gradle/[m
+	[31mbuild/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git blame test[K[K[K[K[K
+usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
+
+    <rev-opts> are documented in git-rev-list(1)
+
+    --incremental         Show blame entries as we find them, incrementally
+    -b                    Show blank SHA-1 for boundary commits (Default: off)
+    --root                Do not treat root commits as boundaries (Default: off)
+    --show-stats          Show work cost statistics
+    --progress            Force progress reporting
+    --score-debug         Show output score for blame entries
+    -f, --show-name       Show original filename (Default: auto)
+    -n, --show-number     Show original linenumber (Default: off)
+    -p, --porcelain       Show in a format designed for machine consumption
+    --line-porcelain      Show porcelain format with per-line commit information
+    -c                    Use the same output mode as git-annotate (Default: off)
+    -t                    Show raw timestamp (Default: off)
+    -l                    Show long commit SHA1 (Default: off)
+    -s                    Suppress author name and timestamp (Default: off)
+    -e, --show-email      Show author email instead of name (Default: off)
+    -w                    Ignore whitespace differences
+    --indent-heuristic    Use an experimental heuristic to improve diffs
+    --minimal             Spend extra cycles to find better match
+    -S <file>             Use revisions from <file> instead of calling git-rev-list
+    --contents <file>     Use <file>'s contents as the final image
+    -C[<score>]           Find line copies within and across files
+    -M[<score>]           Find line movements within and across files
+    -L <n,m>              Process only line range n,m, counting from 1
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git blame typec[Kscript 
+[?1h=dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700   1) Script started on 2020-04-09 11:27:34-0700[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700   2) posavan@cf418-15:~$ [7m^M[27mposavan@cf418-15:~$ mkdir csci241[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700   3) posavan@cf418-15:~$ cd csci2[7m^G^H^G^H^G[27mi241[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700   4) posavan@cf418-15:~/csci241$ ls[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700   5) posavan@cf418-15:~/csci241$ [7m^G^G^G^G^G[27mgit clone https://githu[m b.com/csci241-20s/lab-1-posavatz.git[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700   6) Cloning into 'lab-1-posavatz'...[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700   7) remote: Enumerating objects: 14, done.[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700   8) remote: Counting objects:   7% (1/14)[7m^M[27mremote: Counting objec[m ts:  14% (2/14)[7m^M[27mremote: Counting objects:  21% (3/14)[7m^M[27mremote: Counting objects:  28% (4/14)[7m^M[27mremote: Counting objects:[m   35% (5/14)[7m^M[27mremote: Counting objects:  42% (6/14)[7m^M[27mremote: Counting objects:  50% (7/14)[7m^M[27mremote: Counting objects:  5[m 7% (8/14)[7m^M[27mremote: Counting objects:  64% (9/14)[7m^M[27mremote: Counting objects:  71% (10/14)[7m^M[27mremote: Counting objects:  78%[m  (11/14)[7m^M[27mremote: Counting objects:  85% (12/14)[7m^M[27mremote: Counting objects:  92% (13/14)[7m^M[27mremote: Counting objects: 100%[m  (14/14)[7m^M[27mremote: Counting objects: 100% (14/14), done.[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700   9) remote: Compressing objects:  12% (1/8)[7m^M[27mremote: Compressing [m objects:  25% (2/8)[7m^M[27mremote: Compressing objects:  37% (3/8)[7m^M[27mremote: Compressing objects:  50% (4/8)[7m^M[27mremote: Compressi[m ng objects:  62% (5/8)[7m^M[27mremote: Compressing objects:  75% (6/8)[7m^M[27mremote: Compressing objects:  87% (7/8)[7m^M[27mremote: Compre[m ssing objects: 100% (8/8)[7m^M[27mremote: Compressing objects: 100% (8/8), done.[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  10) remote: Total 14 (delta 2), reused 0 (delta 0), pack-reused 0[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  11) Unpacking objects:   7% (1/14)   [7m^M[27mUnpacking objects:  14% (2[m /14)   [7m^M[27mUnpacking objects:  21% (3/14)   [7m^M[27mUnpacking objects:  28% (4/14)   [7m^M[27mUnpacking objects:  35% (5/14)   [7m^M[27mUnpack[m ing objects:  42% (6/14)   [7m^M[27mUnpacking objects:  50% (7/14)   [7m^M[27mUnpacking objects:  57% (8/14)   [7m^M[27mUnpacking objects:  6[m 4% (9/14)   [7m^M[27mUnpacking objects:  71% (10/14)   [7m^M[27mUnpacking objects:  78% (11/14)   [7m^M[27mUnpacking objects:  85% (12/14)   [m [7m^M[27mUnpacking objects:  92% (13/14)   [7m^M[27mUnpacking objects: 100% (14/14)   [7m^M[27mUnpacking objects: 100% (14/14), done.[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  12) posavan@cf418-15:~/csci241$ ls[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  13) lab-1-posavatz[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  14) posavan@cf418-15:~/csci241$ git status[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  15) On branch master[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  16) [m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  17) No commits yet[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  18) [m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  19) Untracked files:[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  20)   (use "git add <file>..." to include in what will be committ[m ed)[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  21) [m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  22)      [31m../#mredauto#3#[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  23)      [31m../.ICEauthority[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  24)      [31m../.Xauthority[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  25)      [31m../.atom/[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  26)      [31m../.bash_history[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  27)      [31m../.byobu/[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  28)      [31m../.cache/[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  29)      [31m../.compiz/[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  30)      [31m../.config/[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  31)      [31m../.dmrc[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  32)      [31m../.emacs.d/[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  33)      [31m../.gitconfig[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  34)      [31m../.gnupg/[m[m
+dfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  35)      [31m../.lesshst[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  36)      [31m../.local/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  37)      [31m../.mozilla/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  38)      [31m../.nv/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  39)      [31m../.pki/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  40)      [31m../.racket/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  41)      [31m../.rstudio-desktop/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  42)      [31m../.ssh/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  43)      [31m../.subversion/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  44)      [31m../.thunderbird/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  45)      [31m../.viminfo[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  46)      [31m../.vscode/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  47)      [31m../.winfolders/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  48)      [31m../.winprofile/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  49)      [31m../.xsession-errors[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  50)      [31m../Desktop/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  51)      [31m../Documents/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  52)      [31m../Downloads/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  53)      [31m../Music/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  54)      [31m../Pictures/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  55)      [31m../Videos/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  56)      [31m./[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  57)      [31m../csci247/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  58)      [31m../snap/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  59)      [31m../typescript[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  60) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  61) nothing added to commit but untracked files present (use "git[m :[K[K [KESCESC[KOO[KBB[K add" to track)[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  62) posavan@cf418-15:~/csci241$ git config --global user.name Nik[m :[K[K [KESCESC[KOO[KBB[Kolai Posavatz[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  63) posavan@cf418-15:~/csci241$ git config --global user.em[7m^G[27mail [m :[K[K [KESCESC[KOO[KBB[Kposavan@wwu.edu[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  64) posavan@cf418-15:~/csci241$ [7m^M[27mposavan@cf418-15:~/csci241$ [7m^M[27mp[m :[K[K [KESCESC[KOO[KBB[Kosavan@cf418-15:~/csci241$ touch writeup.txt[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  65) posavan@cf418-15:~/csci241$ git add writeup.txt[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  66) posavan@cf418-15:~/csci241$ git commit -m "Added empty writeu[m :[K[K [KESCESC[KOO[KBB[Kp"[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  67) [master (root-commit) 92e01cb] Added empty writeup[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  68)  1 file changed, 0 insertions(+), 0 deletions(-)[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  69)  create mode 100644 csci241/writeup.txt[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  70) posavan@cf418-15:~/csci241$ [7m^G[27mttps://github.com/csci241-20s/l[m :[K[K [KESCESC[KOO[KBB[Kab-1-posavatz.git[7m^M[27mhttps://github.com/csci241-20s/lab-1-posavatz.git[7m^M[27m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  71) bash: https://github.com/csci241-20s/lab-1-posavatz.git: No s[m :[K[K [KESCESC[KOO[KBB[Kuch file or directory[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  72) posavan@cf418-15:~/csci241$ git push[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  73) fatal: No configured push destination.[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  74) Either specify the URL from the command-line or configure a r[m :[K[K [KESCESC[KOO[KBB[Kemote repository using[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  75) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  76)     git remote add <name> <url>[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  77) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  78) and then push using the remote name[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  79) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  80)     git push <name>[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  81) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  82) posavan@cf418-15:~/csci241$ git status[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  83) On branch master[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  84) Untracked files:[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  85)   (use "git add <file>..." to include in what will be committ[m :[K[K [KESCESC[KOO[KBB[Ked)[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  86) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  87)      [31m../#mredauto#3#[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  88)      [31m../.ICEauthority[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  89)      [31m../.Xauthority[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  90)      [31m../.atom/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  91)      [31m../.bash_history[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  92)      [31m../.byobu/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  93)      [31m../.cache/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  94)      [31m../.compiz/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  95)      [31m../.config/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  96)      [31m../.dmrc[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  97)      [31m../.emacs.d/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  98)      [31m../.gitconfig[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700  99)      [31m../.gnupg/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 100)      [31m../.lesshst[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 101)      [31m../.local/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 102)      [31m../.mozilla/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 103)      [31m../.nv/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 104)      [31m../.pki/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 105)      [31m../.racket/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 106)      [31m../.rstudio-desktop/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 107)      [31m../.ssh/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 108)      [31m../.subversion/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 109)      [31m../.thunderbird/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 110)      [31m../.viminfo[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 111)      [31m../.vscode/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 112)      [31m../.winfolders/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 113)      [31m../.winprofile/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 114)      [31m../.xsession-errors[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 115)      [31m../Desktop/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 116)      [31m../Documents/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 117)      [31m../Downloads/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 118)      [31m../Music/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 119)      [31m../Pictures/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 120)      [31m../Videos/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 121)      [31mlab-1-posavatz/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 122)      [31m../csci247/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 123)      [31m../snap/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 124)      [31m../typescript[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 125) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 126) nothing added to commit but untracked files present (use "git[m :[K[K [KESCESC[KOO[KBB[K add" to track)[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 127) posavan@cf418-15:~/csci241$ git push origin master[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 128) fatal: 'origin' does not appear to be a git repository[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 129) fatal: Could not read from remote repository.[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 130) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 131) Please make sure you have the correct access rights[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 132) and the repository exists.[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 133) posavan@cf418-15:~/csci241$ touch writeup.txt[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 134) posavan@cf418-15:~/csci241$ https://github.com/csci241-20s/la[m :[K[K [KESCESC[KOO[KBB[Kb-1-posavatz.git[7m^M^H^H^H^H^H^H^H^H^H^H^H^H[27mgit add[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 135) posavan@cf418-15https://github.com/csci241-20s/lab-1-posavatz[m :[K[K [KESCESC[KOO[KBB[K.git[7m^M[27mgit commit -m "Added empty writeup"[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 136) On branch master[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 137) Untracked files:[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 138)      [31m../#mredauto#3#[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 139)      [31m../.ICEauthority[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 140)      [31m../.Xauthority[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 141)      [31m../.atom/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 142)      [31m../.bash_history[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 143)      [31m../.byobu/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 144)      [31m../.cache/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 145)      [31m../.compiz/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 146)      [31m../.config/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 147)      [31m../.dmrc[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 148)      [31m../.emacs.d/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 149)      [31m../.gitconfig[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 150)      [31m../.gnupg/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 151)      [31m../.lesshst[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 152)      [31m../.local/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 153)      [31m../.mozilla/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 154)      [31m../.nv/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 155)      [31m../.pki/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 156)      [31m../.racket/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 157)      [31m../.rstudio-desktop/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 158)      [31m../.ssh/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 159)      [31m../.subversion/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 160)      [31m../.thunderbird/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 161)      [31m../.viminfo[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 162)      [31m../.vscode/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 163)      [31m../.winfolders/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 164)      [31m../.winprofile/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 165)      [31m../.xsession-errors[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 166)      [31m../Desktop/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 167)      [31m../Documents/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 168)      [31m../Downloads/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 169)      [31m../Music/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 170)      [31m../Pictures/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 171)      [31m../Videos/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 172)      [31mlab-1-posavatz/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 173)      [31m../csci247/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 174)      [31m../snap/[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 175)      [31m../typescript[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 176) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 177) nothing added to commit but untracked files present[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 178) posavan@cf418-15:~/csci241$ git commit -m "Added empty writeu[m :[K[K [KESCESC[KOO[KBB[K[7m^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H[27mgit push[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 179) fatal: No configured push destination.[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 180) Either specify the URL from the command-line or configure a r[m :[K[K [KESCESC[KOO[KBB[Kemote repository using[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 181) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 182)     git remote add <name> <url>[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 183) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 184) and then push using the remote name[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 185) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 186)     git push <name>[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 187) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 188) posavan@cf418-15:~Script started on 2020-04-09 14:38:01-0700[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 189) posavan@cf164-16:~$ ls[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 190)  csci241   Desktop     Downloads       Music   Public   snap [m :[K[K [KESCESC[KOO[KBB[K       typescript[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 191)  csci247   Documents  '#mredauto#3#'   Pictures   R     Templ[m :[K[K [KESCESC[KOO[KBB[Kates   Videos[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 192) posavan@cf164-16:~$ cd cs[7m^G[27mci241/[7m^G[27m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 193) lab-1-posavatz/ .#writeup.txt   [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 194) posavan@cf164-16:~$ cd csci241/lab-1-posavatz/[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 195) posavan@cf164-16:~/csci241/lab-1-posavatz$ ls[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 196) build  build.gradle  gradle  settings.gradle  src  typescript[m :[K[K [KESCESC[KOO[KBB[K  username.txt  writeup.txt[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 197) posavan@cf164-16:~/csci241/lab-1-posavatz$ rm typescript [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 198) posavan@cf164-16:~/csci241/lab-1-posavatz$ nano src/main/java[m :[K[K [KESCESC[KOO[KBB[K/lab1/h[7m^G^H[27mHello.java [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 199) [m[39;49m[39;49m[m[0;7m[ Reading File ][m[0;7m 7 lines ][m[0;7m  GNU nano 2.9.3                   [m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m             src/main/java/lab1/Hello.java                                           [m[7m^M[27m[0;7m^G[m Get Help    [0;7m^O[m Write Out   [0;7m^W[m [m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[mWhere Is    [0;7m^K[m Cut Text    [0;7m^J[m Justify     [0;7m^C[m Cur Pos     [0;7mM-U[m Undo[0;7mM-A[m Mark Text[7m^M[27m[0;7m^X[m Exit[0;7m^R[m Read File   [0;7m^\[m Replace     [0;7m^U[m [m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[mUncut Text  [0;7m^T[m To Spell    [0;7m^_[m Go To Line  [0;7mM-E[m Redo[0;7mM-6[m Copy Text[7m^M[27m[39;49m[36mpackage[39m[m lab1;[7m^M[27m[36mpublic[39m[m [36mclass[39m[m Hello {[36mpublic[39m[m [36mstatic[39m[m [32mvoid[39m[m m[m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[39;49m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[32m[39m[main(String[] args) {System.out.println();}[7m^M[27m[0;7mModified[m[7m^M[27mapackage lab1;[7m^M[27marpackage lab1;[7m^M[27margpackage lab1;[7m^M[27margspackage lab[m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[39;49m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[32m[39m[m[0;7m[m[7m^H^H[27m[36mpackage[39m[m[7m^M[27m    System.ou[7m^M[27m.println(args[0][0;7m        [m[0;7m[ Wrote 7 lines ][m[7m^M^M[27mposavan@cf164-16:~/csci241/lab-1-posavatz$ com[m
+:[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[39;49m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[32m[39m[m[0;7m[m[36m[39m[m[0;7m[m[0;7m[m[7m^G^H^H^H[27mg[7m^G[27mradle build[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 200) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 201) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 202) [1m<[0;1m-------------> 0% EXECUTING [83ms][m[1m> :compileJava[m[1m<[0;32;1m====[0;39;1m-------[m :[K[K [KESCESC[KOO[KBB[K[1m[0;1m[m[1m[m[1m[0;32;1m[0;39;1m--> 35% EXECUTING [183ms][m[1m> :distTar[m[1m<[0;32;1m=====[0;39;1m--------> 42% EXECUTING [283ms][m[1m> :distZip[m[1m<[0;32;1m=====[0;39;1m--------> 42% EXECUTING [383ms][m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 203) [32;1mBUILD SUCCESSFUL[0;39m in 740ms[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 204) 5 actionable tasks: 4 executed, 1 up-to-date[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 205) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 206) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 207) [1m<[0;1m-------------> 0% WAITING[m[1m> :distZip[m[0mposavan@cf164-16:~/csci24[m :[K[K [KESCESC[KOO[KBB[K[1m[0;1m[m[1m[m[0m1/lab-1-posavatz$ gradle run[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 208) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 209) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 210) [1m> Connecting to Daemon[m[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [74ms][m[1m> :[m :[K[K [KESCESC[KOO[KBB[K[1m[m[1m[0;32;1m[0;39;1m[m[1mrun[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 211) [31;1m> Task :run[0;39m[31m FAILED[39m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 212) Exception in thread "main" java.lang.ArrayIndexOutOfBoundsExc[m :[K[K [KESCESC[KOO[KBB[Keption: Index 0 out of bounds for length 0[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 213)         at lab1.Hello.main(Hello.java:5)[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 214) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 215) [31mFAILURE: [39m[31mBuild failed with an exception.[39m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 216) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 217) * What went wrong:[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 218) Execution failed for task ':run'.[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 219) [33m> [39mProcess 'command '/usr/lib/jvm/java-11-openjdk-amd64/bin/ja[m :[K[K [KESCESC[KOO[KBB[K[33m[39mva'' finished with non-zero exit value 1[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 220) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 221) * Try:[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 222) Run with [1m--stacktrace[m option to get the stack trace. Run with[m :[K[K [KESCESC[KOO[KBB[K[1m[m [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 223) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 224) * Get more help at [1mhttps://help.gradle.org[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 225) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 226) [31;1mBUILD FAILED[0;39m in 399ms[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 227) 2 actionable tasks: 1 executed, 1 up-to-date[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 228) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 229) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 230) [1m<[0;1m-------------> 0% WAITING[m[1m> :run[m[0mposavan@cf164-16:~/csci241/la[m :[K[K [KESCESC[KOO[KBB[K[1m[0;1m[m[1m[m[0mb-1-posavatz$ gradle run --args="your agrs here"[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 231) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 232) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 233) [1m> Task :run[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 234) your[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 235) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 236) [32;1mBUILD SUCCESSFUL[0;39m in 390ms[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 237) 2 actionable tasks: 1 executed, 1 up-to-date[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 238) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 239) [1m<[0;1m-------------> 0% WAITING[m[0mposavan@cf164-16:~/csci241/lab-1-po[m :[K[K [KESCESC[KOO[KBB[K[1m[0;1m[m[0msavatz$ $ gradle run --args="241"[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 240) $: command not found[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 241) posavan@cf164-16:~/csci241/lab-1-posavatz$ $ gradle run --arg[m :[K[K [KESCESC[KOO[KBB[K[7m^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H[27m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 242) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 243) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 244) [1m> Connecting to Daemon[m[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [73ms][m[1m> :[m :[K[K [KESCESC[KOO[KBB[K[1m[m[1m[0;32;1m[0;39;1m[m[1mrun[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 245) [1m> Task :run[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 246) 241[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 247) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 248) [32;1mBUILD SUCCESSFUL[0;39m in 406ms[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 249) 2 actionable tasks: 1 executed, 1 up-to-date[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 250) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 251) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 252) [1m<[0;1m-------------> 0% WAITING[m[1m> :run[m[0mposavan@cf164-16:~/csci241/la[m :[K[K [KESCESC[KOO[KBB[K[1m[0;1m[m[1m[m[0m[7m^H^H^H^H^H^H^H^H^H^H[27mnano src/main/java/lab1/Hello.java[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 253) [m[39;49m[39;49m[m[0;7m[ Reading File ][m[0;7m 7 lines ][m[0;7m  GNU nano 2.9.3                   [m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m             src/main/java/lab1/Hello.java                                           [m[7m^M[27m[0;7m^G[m Get Help    [0;7m^O[m Write Out   [0;7m^W[m [m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[mWhere Is    [0;7m^K[m Cut Text    [0;7m^J[m Justify     [0;7m^C[m Cur Pos     [0;7mM-U[m Undo[0;7mM-A[m Mark Text[7m^M[27m[0;7m^X[m Exit[0;7m^R[m Read File   [0;7m^\[m Replace     [0;7m^U[m [m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[mUncut Text  [0;7m^T[m To Spell    [0;7m^_[m Go To Line  [0;7mM-E[m Redo[0;7mM-6[m Copy Text[7m^M[27m[39;49m[36mpackage[39m[m lab1;[7m^M[27m[36mpublic[39m[m [36mclass[39m[m Hello {[36mpublic[39m[m [36mstatic[39m[m [32mvoid[39m[m m[m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[39;49m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[32m[39m[main(String[] args) {System.out.println(args[0]);}[7m^M[27m  }[7m^M[27m    System.out.println([0;7mModified[mHargs[0])"args[0]);Hargs[0]);earg[m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[39;49m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[32m[39m[m[0;7m[ms[0]);largs[0])llargs[0]);oargs[0]);,args[0]); args[0]);[31m"Hello, "[39m[margs[0]);+args[0]);args[0]+[31m"!"[39m[m[0;7m        [m[0;7m[ Wrote 7 lines ][m[m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[39;49m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[36m[39m[m[32m[39m[m[0;7m[m[31m[39m[m[31m[39m[m[0;7m[m[0;7m[m[7m^M^M^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H[27mgradle build[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 254) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 255) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 256) [1m<[0;1m-------------> 0% EXECUTING [88ms][m[1m> :compileJava[m[1m<[0;32;1m====[0;39;1m-------[m :[K[K [KESCESC[KOO[KBB[K[1m[0;1m[m[1m[m[1m[0;32;1m[0;39;1m--> 35% EXECUTING [188ms][m[1m> :distTar[m[1m<[0;32;1m=====[0;39;1m--------> 42% EXECUTING [288ms][m[1m> :distZip[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 257) [32;1mBUILD SUCCESSFUL[0;39m in 692ms[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 258) 5 actionable tasks: 4 executed, 1 up-to-date[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 259) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 260) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 261) [1m<[0;1m-------------> 0% WAITING[m> IDLE[0mposavan@cf164-16:~/csci241/la[m :[K[K [KESCESC[KOO[KBB[K[1m[0;1m[m[0mb-1-posavatz$ gradle run --args="241"[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 262) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 263) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 264) [1m> Connecting to Daemon[m[1m<[0;1m-------------> 0% EXECUTING [73ms][m[1m> :c[m :[K[K [KESCESC[KOO[KBB[K[1m[m[1m[0;1m[m[1mompileJava > Resolve files of :compileClasspath[m[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [173ms][m[1m> :run[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 265) [1m> Task :run[m[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 266) Hello, 241![m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 267) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 268) [32;1mBUILD SUCCESSFUL[0;39m in 512ms[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 269) 2 actionable tasks: 1 executed, 1 up-to-date[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 270) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 271) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 272) [1m<[0;1m-------------> 0% WAITING[m[1m> :run[m[0mposavan@cf164-16:~/csci241/la[m :[K[K [KESCESC[KOO[KBB[K[1m[0;1m[m[1m[m[0mb-1-posavatz$ git add s[7m^G[27mrc/main/java/lab1/Hello.java [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 273) posavan@cf164-16:~/csci241/lab-1-posavatz$ git commit -m "Hel[m :[K[K [KESCESC[KOO[KBB[Klo now prints command line arg"[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 274) [master 5df9aef] Hello now prints command line arg[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 275)  1 file changed, 1 insertion(+), 1 deletion(-)[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 276) posavan@cf164-16:~/csci241/lab-1-posavatz$ git push[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 277) Username for 'https://github.com': posavatz[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 278) Password for 'https://posavatz@github.com': [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 279) Counting objects: 7, done.[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 280) Delta compression using up to 8 threads.[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 281) Compressing objects:  33% (1/3)   [7m^M[27mCompressing objects:  66%[m :[K[K [KESCESC[KOO[KBB[K (2/3)   [7m^M[27mCompressing objects: 100% (3/3)   [7m^M[27mCompressing objects: 100% (3/3), done.[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 282) Writing objects:  14% (1/7)   [7m^M[27mWriting objects:  28% (2/7)  [m :[K[K [KESCESC[KOO[KBB[K [7m^M[27mWriting objects:  42% (3/7)   [7m^M[27mWriting objects:  57% (4/7)   [7m^M[27mWriting objects:  71% (5/7)   [7m^M[27mWriting objects:  85%[m :[K[K [KESCESC[KOO[KBB[K (6/7)   [7m^M[27mWriting objects: 100% (7/7)   [7m^M[27mWriting objects: 100% (7/7), 489 bytes | 244.00 KiB/s, done.[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 283) Total 7 (delta 2), reused 0 (delta 0)[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 284) remote: Resolving deltas:   0% (0/2)[7m^M[27mremote: Resolving delta[m :[K[K [KESCESC[KOO[KBB[Ks:  50% (1/2)[7m^M[27mremote: Resolving deltas: 100% (2/2)[7m^M[27mremote: Resolving deltas: 100% (2/2), completed with 2 local object[m :[K[K [KESCESC[KOO[KBB[Ks.[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 285) To https://github.com/csci241-20s/lab-1-posavatz.git[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 286)    3bfb02f..5df9aef  master -> master[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 287) posavan@cf164-16:~/csci241/lab-1-posavatz$ exit[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 288) exit[m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 289) [m
+:[K[K [KESCESC[KOO[KBB[Kdfcbfed9 (Nikolai           2020-04-09 14:47:36 -0700 290) Script done on 2020-04-09 14:43:54-0700[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 291) Script started on 2020-04-09 14:50:35-0700[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 292) posavan@cf164-16:~/csci241/lab-1-posavatz$ git checkout[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 293) Your branch is up to date with 'origin/master'.[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 294) posavan@cf164-16:~/csci241/lab-1-posavatz$ git reset[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 295) posavan@cf164-16:~/csci241/lab-1-posavatz$ git status[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 296) On branch master[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 297) Your branch is up to date with 'origin/master'.[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 298) [m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 299) Untracked files:[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 300)   (use "git add <file>..." to include in what will be committ[m :[K[K [KESCESC[KOO[KBB[Ked)[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 301) [m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 302)      [31m.gradle/[m[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 303)      [31mbuild/[m[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 304) [m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 305) nothing added to commit but untracked files present (use "git[m :[K[K [KESCESC[KOO[KBB[K add" to track)[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 306) posavan@cf164-16:~/csci241/lab-1-posavatz$ [7m^G[27mnano test.txt[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 307) [m[39;49m[39;49m[m[0;7m[ New File ][m[0;7m  GNU nano 2.9.3                                 [m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m          test.txt                                                     [m[7m^M[27m[0;7m^G[m Get Help    [0;7m^O[m Write Out   [0;7m^W[m Where Is    [0;7m^K[m[m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m Cut Text    [0;7m^J[m Justify     [0;7m^C[m Cur Pos     [0;7mM-U[m Undo[0;7mM-A[m Mark Text[7m^M[27m[0;7m^X[m Exit[0;7m^R[m Read File   [0;7m^\[m Replace     [0;7m^U[m Uncut Text  [0;7m^T[m[m :[K[K [KESCESC[KOO[KBB[K[m[39;49m[39;49m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m[0;7m[m To Spell    [0;7m^_[m Go To Line  [0;7mM-E[m Redo[0;7mM-6[m Copy Text[7m^M[27m[39;49m[m[0;7m[ Wrote 0 lines ][m[7m^M^M[27mposavan@cf164-16:~/csci241/lab-1-posavatz$ ls[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 308) build  build.gradle  gradle  settings.gradle  src  test.txt  [m :[K[K [KESCESC[KOO[KBB[Ktypescript  username.txt  writeup.txt[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 309) posavan@cf164-16:~/csci241/lab-1-posavatz$ git rm test.txt [m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 310) fatal: pathspec 'test.txt' did not match any files[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 311) posavan@cf164-16:~/csci241/lab-1-posavatz$ git add test.txt[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 312) posavan@cf164-16:~/csci241/lab-1-posavatz$ git commit -m "Add[m :[K[K [KESCESC[KOO[KBB[Ked test file for testing purposes"[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 313) [master c2f8068] Added test file for testing purposes[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 314)  1 file changed, 0 insertions(+), 0 deletions(-)[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 315)  create mode 100644 test.txt[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 316) posavan@cf164-16:~/csci241/lab-1-posavatz$ [7m^G^G^G^G^G^G^G^G^G[27m[m :[K[K [KESCESC[KOO[KBB[K[7m^G^G^G[27mgit push[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 317) Username for 'https://github.com': posavatz[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 318) Password for 'https://posavatz@github.com': [m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 319) Counting objects: 2, done.[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 320) Delta compression using up to 8 threads.[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 321) Compressing objects:  50% (1/2)   [7m^M[27mCompressing objects: 100%[m :[K[K [KESCESC[KOO[KBB[K (2/2)   [7m^M[27mCompressing objects: 100% (2/2), done.[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 322) Writing objects:  50% (1/2)   [7m^M[27mWriting objects: 100% (2/2)  [m :[K[K [KESCESC[KOO[KBB[K [7m^M[27mWriting objects: 100% (2/2), 272 bytes | 272.00 KiB/s, done.[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 323) Total 2 (delta 1), reused 0 (delta 0)[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 324) remote: Resolving deltas:   0% (0/1)[7m^M[27mremote: Resolving delta[m :[K[K [KESCESC[KOO[KBB[Ks: 100% (1/1)[7m^M[27mremote: Resolving deltas: 100% (1/1), completed with 1 local object.[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 325) To https://github.com/csci241-20s/lab-1-posavatz.git[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 326)    dfcbfed..c2f8068  master -> master[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 327) posavan@cf164-16:~/csci241/lab-1-posavatz$ [7m^G[27mls[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 328) build  build.gradle  gradle  settings.gradle  src  test.txt  [m :[K[K [KESCESC[KOO[KBB[Ktypescript  username.txt  writeup.txt[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 329) posavan@cf164-16:~/csci241/lab-1-posavatz$ git rm test.txt[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 330) rm 'test.txt'[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 331) posavan@cf164-16:~/csci241/lab-1-posavatz$ git status[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 332) On branch master[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 333) Your branch is up to date with 'origin/master'.[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 334) [m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 335) Changes to be committed:[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 336)   (use "git reset HEAD <file>..." to unstage)[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 337) [m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 338)      [32mdeleted:    test.txt[m[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 339) [m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 340) Untracked files:[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 341)   (use "git add <file>..." to include in what will be committ[m :[K[K [KESCESC[KOO[KBB[Ked)[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 342) [m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 343)      [31m.gradle/[m[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 344)      [31mbuild/[m[m
+:[K[K [KESCESC[KOO[KBB[K00000000 (Not Committed Yet 2020-04-09 14:58:12 -0700 345) [m
+:[K[K [KESCESC[K[[[K44[K:[K[K:[K[K [KESCESC[K[[[K44[K:[K[K:[K[K[?1l>posavan@cf164-16:~/csci241/lab-1-posavatz$ git reset
+Unstaged changes after reset:
+M	typescript
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git [K[K[K[Kano[K[K[Knano test2.txt
+[?1049h[22;0;0t[1;50r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[48;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                                          test2.txt                                                     [1;119H(B[m[49d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[50d(B[0;7m^X(B[m Exit[50;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[48d[3d[39;49m(B[m[?12l[?25h[?25l[1;119H[48;52H(B[0;7m[ Wrote 0 lines ](B[m[3d[?12l[?25h[?25l[48d[J[50;120H[?12l[?25h[50;1H[?1049l[23;0;0t[?1l>posavan@cf164-16:~/csci241/lab-1-posavatz$ ls
+build  build.gradle  gradle  settings.gradle  src  test2.txt  typescript  username.txt	writeup.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git mv test2.txt testChanged,[K.txt
+fatal: not under version control, source=test2.txt, destination=testChanged.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git mv test2.txt testChanged.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KtestAlphe[Ka.txt
+fatal: not under version control, source=test2.txt, destination=testAlpha.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git mv test2.txt testAlpha.txtChanged.txtls[Kgit mv test2.txt testChanged.txtls[K[K[Kgit add test2.txt 
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git cc o[K[K[Kommit -m "test case to rename"
+[master 252b679] test case to rename
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git push
+Username for 'https://github.com': posavatz
+Password for 'https://posavatz@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)   Writing objects: 100% (2/2)   Writing objects: 100% (2/2), 260 bytes | 260.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+git statusTo https://github.com/csci241-20s/lab-1-posavatz.git
+   85cd901..252b679  master -> master
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gradle/[m
+	[31mbuild/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+posavan@cf164-16:~/csci241/lab-1-posavatz$ ls
+build  build.gradle  gradle  settings.gradle  src  test2.txt  typescript  username.txt	writeup.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ test[K[K[K[Kgit mc[Kv test2.txt testAlpha.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git push
+Username for 'https://github.com': posavatz
+Password for 'https://posavatz@github.com': 
+Everything up-to-date
+posavan@cf164-16:~/csci241/lab-1-posavatz$ ls
+build  build.gradle  gradle  settings.gradle  src  testAlpha.txt  typescript  username.txt  writeup.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ lsgit pushmv test2.txt testAlpha.txtpush[K[K[K[K[Ka[Kadd text[K[K[KestAlpha.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git commit - [Km" renamed"[1@ 
+[master b84cfd1]  renamed
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename test2.txt => testAlpha.txt (100%)
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git push
+Username for 'https://github.com': posacar   vatz
+Password for 'https://posavatz@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)   Writing objects: 100% (2/2)   Writing objects: 100% (2/2), 225 bytes | 225.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/csci241-20s/lab-1-posavatz.git
+   252b679..b84cfd1  master -> master
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git reset
+Unstaged changes after reset:
+M	typescript
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git push
+Username for 'https://github.com': posavatz
+Password for 'https://posavatz@github.com': 
+Everything up-to-date
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git rm testAlpha.txt 
+rm 'testAlpha.txt'
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git push
+Username for 'https://github.com': posavatz
+Password for 'https://posavatz@github.com': 
+Everything up-to-date
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git pull
+Already up to date.
+posavan@cf164-16:~/csci241/lab-1-posavatz$ ls
+build  build.gradle  gradle  settings.gradle  src  typescript  username.txt  writeup.txt
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git push
+Username for 'https://github.com': posavatz
+Password for 'https://posavatz@github.com': 
+Everything up-to-date
+posavan@cf164-16:~/csci241/lab-1-posavatz$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mdele
